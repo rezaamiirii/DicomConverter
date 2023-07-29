@@ -17,11 +17,11 @@ namespace Convert
     {
         static void Main(string[] args)
         {
-            var file = DicomFile.Open(@"2023_02_08_093904_RL_PELVIS.dcm");  
+            var file = DicomFile.Open(@"Input.dcm");  
          
             var newFile = file.Clone(DicomTransferSyntax.ExplicitVRLittleEndian);
 
-            newFile.Save(@"outputsd.dcm");
+            newFile.Save(@"output.dcm");
             
         }
        
